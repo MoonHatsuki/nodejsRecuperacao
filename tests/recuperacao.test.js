@@ -40,7 +40,7 @@ describe ('testando a funcao VerificarCusto', () => {
         expect(resultado).toBe('Valor inválido')
     })
     it('verificar letra', () => {
-        const resultado = ServiceRecuperacao.VerificaCusto(a);
+        const resultado = ServiceRecuperacao.VerificaCusto('a');
         expect(resultado).toBe('erro')
     })
 })
