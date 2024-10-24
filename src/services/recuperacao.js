@@ -1,4 +1,13 @@
 class ServiceRecuperacao {
+    FuncoesDisponiveis(){
+       return (
+                'Funcoes disponíveis: ' +
+                '4-Conversor C° em FH ' +
+                '15-Verificar Triângulo ' +
+                '18-Custo consumidor carro novo ' +
+                '24-Tabuada 0 a 10 ' +
+                '16-Calcular imposto de renda'
+    )}
     Conversor(cel, fah) {
         return fah = (9 * cel + 160) / 5;
     }

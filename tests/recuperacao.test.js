@@ -29,6 +29,14 @@ describe('testando a funcao VerificarTriangulo: ', () => {
         const resultado = ServiceRecuperacao.VerificaTriangulos('a', 2, 3);
         expect(resultado).toBe('erro')
     })
+    it('verificar uma triangulo Equilatero', () => {
+        const resultado = ServiceRecuperacao.VerificaTriangulos(2, 2, 3);
+        expect(resultado).toBe('Equilatero')
+    })
+    it('verificar uma triangulo Isósceles', () => {
+        const resultado = ServiceRecuperacao.VerificaTriangulos(3, 3, 3);
+        expect(resultado).toBe('Isósceles')
+    })
 })
 describe ('testando a funcao VerificarCusto', () => {
     it('verificar valores positivos', () => {
@@ -95,3 +103,5 @@ describe ('testando a funcao Imposto', () => {
     
     
 })
+
+//Que o prof Renan tenha piedade da aluna lenta dele, Amém! S2
