@@ -1,0 +1,10 @@
+const express = require ('express')
+const ControllerRecuperacao = require ('../contollers/recuperacao')
+const routes = express.Router()
+routes.get('/', ControllerRecuperacao.GetFuncao)
+routes.post('/ex4', ControllerRecuperacao.PostEx4)
+routes.post('/ex15', ControllerRecuperacao.PostEx15)
+routes.post('/ex18', ControllerRecuperacao.PostEx18)
+routes.post('/ex24', ControllerRecuperacao.PostEx24)
+routes.post('/ex16', ControllerRecuperacao.PostEx16)
+module.exports = routes
