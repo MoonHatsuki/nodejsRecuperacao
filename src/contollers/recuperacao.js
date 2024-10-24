@@ -17,7 +17,7 @@ class ControllerRecuperacao {
     }
     PostEx4(req,res){
         try{
-            const resultado = ServiceRecuperacao.conversor(req.body.fah,cel)
+            const resultado = ServiceRecuperacao.Conversor(req.body.cel, fah)
             res.status(201).json({ resultado })
             
         }catch (error){

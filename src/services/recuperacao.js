@@ -1,5 +1,5 @@
 class ServiceRecuperacao {
-    conversor(fah, cel) {
+    Conversor(cel, fah) {
         return fah = (9 * cel + 160) / 5;
     }
     VerificaTriangulos(a, b, c) {
@@ -41,6 +41,9 @@ class ServiceRecuperacao {
             return 'Aliquota de 15%, valor de imposto: ' + (renda * 15) / 100;
         } else if (renda > 7 * salMin) {
             return 'Aliquota de 20%, valor de imposto: ' + (renda * 20) / 100;
+        }
+        else if (renda<0 *salMin){
+            return 'Valor Inválido!'
         }
     }
 
